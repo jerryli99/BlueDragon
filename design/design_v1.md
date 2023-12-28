@@ -8,8 +8,8 @@ In Microsoft Edge, their search page has many news and weather data etc. I feel 
 
 Weather API: https://openweathermap.org/api (make an account...)1,000 API calls per day for free
 
-Tech news publishers [hackernoon.com, wired.com, space.com, dev.to, technologyreview.com, marktechpost.com] 
-I will only need like at most 18 tech news showing to me, so 3 news from each website. I actually want to make news its own small section. Anyway, this will be enough for the frontend.
+Tech news publishers [hackernoon.com, wired.com, space.com, dev.to, technologyreview.com, marktechpost.com, quantamagazine.org, bigthink.com] 
+I will only need like 3 news from each website. I actually want to make news its own small section. Anyway, this will be enough for the frontend.
 
 
 ### For the info query API we have:
