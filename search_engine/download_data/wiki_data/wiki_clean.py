@@ -1,4 +1,4 @@
-'''
+"""
 Assuming you have the wiki database dump file wiki_something.xml downloaded. 
 I will not upload a 91 GB file to Github...
 Where can you get it? See the design folder, design_v1.md, section "crawler"
@@ -20,5 +20,5 @@ with open(file_path, 'r', encoding='utf-8') as file:
 we can see that the format is something like:
 
 
-'''
+"""
 

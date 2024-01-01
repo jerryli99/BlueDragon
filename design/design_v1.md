@@ -35,8 +35,7 @@ This image look up functionality could be challenging because I would need to fi
 
 For user input: I will say I want to achieve something that can 
 
-(Note:<br>
-I didn't want to make things complicated (having a search engine no one but myself would use), so I would not even think about load balancers. This would be best for personal use. But I think adding it in the future is not hard if people like this.)
+(Note: I didn't want to make things complicated (having a search engine no one but myself would use), so I would not even think about load balancers. This would be best for personal use. But I think adding it in the future is not hard if people like this.)
 
 ### For the Database:
 My goal is to scrape 1 TB of website data. Why? Well, I never tried it, so I want to try it. Roast me what ever you like...
@@ -59,9 +58,18 @@ Uhm, so my data source doesn't always have to be from crawling web pages. I can 
 
 Anyways, to actually start getting some data, we need some seeders to start with the crawling. Ideally, the more links in the seeders we have that has value in them, the better. 
 
-seeder sites: [https://stackexchange.com/sites, ]
+Seeder sites: [https://stackexchange.com/sites, https://arxiv.org/, https://www.biorxiv.org/]
 
-Also, I don't need to assume I have no information at the beginning. Like wikipidia has a lot of site data public to download as a bz2 file (https://en.wikipedia.org/wiki/Wikipedia:Database_download), so I will not just rely only on the web crawler. Wikipedia also mentioned that using web crawlers to download large number of htmls is not a good idea for me and them. I used the torrent to download the whole wikipedia (https://meta.wikimedia.org/wiki/Data_dump_torrents#English_Wikipedia). Should I upload this to the cloud? Uhm... I mean it is 91 GB of data in 1 xml file, so...we will see. Maybe not since I don't see the point of doing it, or I can just split the file in slices...
+What kinds of file will I handle? html, xml, img (jpeg, png, ...), pdf(maybe),...
+
+Pagination handle:...
+
+#### Crawling Strategy:
+
+
+
+#### Download Data to Local Machine
+So, I don't need to assume I have no information at the beginning. Like wikipidia has a lot of site data public to download as a bz2 file (https://en.wikipedia.org/wiki/Wikipedia:Database_download), so I will not just rely only on the web crawler. Wikipedia also mentioned that using web crawlers to download large number of htmls is not a good idea for me and them. I used the torrent to download the whole wikipedia (https://meta.wikimedia.org/wiki/Data_dump_torrents#English_Wikipedia). Should I upload this to the cloud? Uhm... I mean it is 91 GB of data in 1 xml file, so...we will see. Maybe not since I don't see the point of doing it, or I can just split the file in slices...
 
 
 
