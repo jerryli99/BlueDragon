@@ -51,6 +51,9 @@ Text data:
 Image data: 
 
 
+The crawl database:
+
+
 ### For Data collection:
 
 #### Crawler:
@@ -58,9 +61,9 @@ Uhm, so my data source doesn't always have to be from crawling web pages. I can 
 
 Anyways, to actually start getting some data, we need some seeders to start with the crawling. Ideally, the more links in the seeders we have that has value in them, the better. 
 
-Seeder sites: [https://stackexchange.com/sites, https://arxiv.org/, https://www.biorxiv.org/]
+Seeder sites: [https://stackexchange.com/sites, https://arxiv.org, https://www.biorxiv.org, https://plato.stanford.edu/contents.html, https://www.quantamagazine.org, https://medium.com]
 
-What kinds of file will I handle? html, xml, img (jpeg, png, ...), pdf(maybe),...
+What kinds of file will I handle? html, xml, img (jpeg, jpg, png, webp...), pdf(maybe),...
 
 Pagination handle:...
 
@@ -69,12 +72,13 @@ Pagination handle:...
 
 
 #### Download Data to Local Machine
+
 So, I don't need to assume I have no information at the beginning. Like wikipidia has a lot of site data public to download as a bz2 file (https://en.wikipedia.org/wiki/Wikipedia:Database_download), so I will not just rely only on the web crawler. Wikipedia also mentioned that using web crawlers to download large number of htmls is not a good idea for me and them. I used the torrent to download the whole wikipedia (https://meta.wikimedia.org/wiki/Data_dump_torrents#English_Wikipedia). Should I upload this to the cloud? Uhm... I mean it is 91 GB of data in 1 xml file, so...we will see. Maybe not since I don't see the point of doing it, or I can just split the file in slices...
 
-
+Uhm, perhaps I can also design a way for you to also add any pdf files(i.e books) you downloaded to your own local DB and then do the indexing for you of course...
 
 #### A bunch of API calls:
-Since there could be a lot of different API usages, I need to monitor the # of call times and used time stamps, and figure out where to store them. Will I ever include videos? Good question. I will probably not do that. Youtube is already fine. 
+Since there could be a lot of different API usages, I need to monitor the # of call times and used time stamps, and figure out where to store them. Maybe build a mini-api manager here. Then have a file to record the api meta data and a python scirpt to check. Will I ever include videos? Good question. I will probably not do that. Youtube is already fine. 
 
 
 ### For the Indexer: 
