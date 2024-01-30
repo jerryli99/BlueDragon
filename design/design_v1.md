@@ -19,8 +19,12 @@ Tech news publishers [hackernoon.com, wired.com, space.com, dev.to, technologyre
 
 I will only need like 3 news from each website. I actually want to make news its own small section. Anyway, this will be enough for the frontend.
 
+### For Understanding User's Search Input:
+I found the paper "Attention is all you need". Perhaps using some idea from this can help me assemble a search query.
 
-### For the info query API we have:
+
+
+### For Info Query API:
 Use Python Django for the backend.
 
 Get /query<br>
@@ -37,7 +41,7 @@ For user input: I will say I want to achieve something that can
 
 (Note: I didn't want to make things complicated (having a search engine no one but myself would use), so I would not even think about load balancers. This would be best for personal use. But I think adding it in the future is not hard if people like this.)
 
-### For the Database:
+### For Database:
 My goal is to scrape 1 TB of website data. Why? Well, I never tried it, so I want to try it. Roast me what ever you like...
 
 Assuming a web site is 2 MB as of the year 2023, then I would roughly need to scrape 1,048,576 MB / 2 MB = 524,288 websites UHmm, OK.
@@ -67,8 +71,11 @@ What kinds of file will I handle? html, xml, img (jpeg, jpg, png, webp...), pdf(
 
 Pagination handle:...
 
-#### Crawling Strategy:
+Although I am crawling different websites, some urls could have some potential threats, so perhaps for the output presented to the user, I would like to have a url scanner to scan for potential melicous sites before & after the crawl. Perhaps I need to run the crawler in a virtual env etc. Ignore http sites.
 
+
+#### Crawling Strategy:
+Look for robots.txt, Look for sitemaps, check if wbesite is https and not http, 
 
 
 #### Download Data to Local Machine
